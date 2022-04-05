@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Mohammed Niyaz<br>Mern Stack Developer</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Photos</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Mohammed Niyaz</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Mohammed Niyaz</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Photos.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/3.webp" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="images/2.webp" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      
+    </div>
+
+    <div class="w3-half">
+      <img src="images/4.webp" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="images/2.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="images/5.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Introduction.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>I'm  Mohammed Niyaz I belong to Manglore Completed Bachelor of Engineering in computer Science</p>
+    <p>I have done my schooling in (sems school). We are Four members in my family including me. My hobbies are   listening to music. Because I like to hear different genres of music. In my free time, I love to code in systems. My strengths are I'm a hardworking person and I'll learn new good things easily. My short-term goal is I have to get placed in reputed company and my long-term goal is to achieve more in that company.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Projects.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>I have done two Projects .</p>
+    <p>1. Twitter home page</p>
+    <p>
+      This project is done by using HTML5 and css in this projects Containes
+      side bar feed tweetbox. in side bar that i have used hover , flex ,and  in feed i used images 
+      in  tweet box i just embedd the tweets,and i used Google fonts for icons  .
+
+    </p>
+    <p>2.  Youtube  Recommendation</p>
+    <p>
+      This project is done by using HTML5 and css in this projects Containes
+      header  sidebar  recommandtion box. in header that i have used google-icons to get icons of youtube logo,and menu bar,  side bar i have used hover properties.in recommendation box i have used images. and i styled thse images
+    
+
+
+    </p>
+    <p><b>My Projects  Screenshots and Links</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/34.PNG" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Twitter-Home-Page</h3>
+          <p class="w3-opacity">Link</p>
+          <p><a href="https://codepen.io/mohemmedniyaz/pen/QWaGKgj">Twitter Home page </a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/35.PNG" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Youtube</h3>
+          <p class="w3-opacity">Link</p>
+          <p><a href="https://codepen.io/mohemmedniyaz/pen/QWadjqV">You tube recommendation Page</a></p>
+        </div>
+      </div>
+    </div>
+   
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Skills.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Some of the skills which i ha aqured</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Non-technical</li>
+        <li class="w3-padding-16">Team-work</li>
+        <li class="w3-padding-16">Self-confidendence</li>
+        <li class="w3-padding-16">Creativity</li>
+        <li class="w3-padding-16">Communication</li>
+        <li class="w3-padding-16">Time Management</li>
+        <li class="w3-padding-16">TCo-ordination</li>
+       
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Technical</li>
+        <li class="w3-padding-16">C</li>
+        <li class="w3-padding-16">Java</li>
+        <li class="w3-padding-16">Html/li>
+        <li class="w3-padding-16">CSS</li>
+        <li class="w3-padding-16">Python</li>
+        
+     
+    </div>
+  </div>
+  <button class="w3-button w3-light-grey w3-padding-large w3-section" style="margin-left: 100px;">
+    <i class="fa fa-download">
+  </button>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form method="post" action="https://script.google.com/macros/s/AKfycbzHfJlU96nL6F7jIDp-uy96Oh9Cn9CGOp1Jjc0NsgccIUnwIaRp6B3TonFMFGI8WwF5/exec">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
